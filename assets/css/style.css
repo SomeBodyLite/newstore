@@ -1,0 +1,129 @@
+body,
+button {
+  font-family: "Inter", sans-serif;
+}
+body {
+  background: url(../images/bg.png) #0a122e no-repeat;
+  background-size: cover;
+}
+a {
+  outline: none;
+}
+.icon {
+  width: 10px;
+  height: 10px;
+}
+.header {
+  background: rgba(22, 30, 57, 0.5);
+  backdrop-filter: blur(108px);
+}
+.header_content {
+  display: flex;
+  justify-content: space-between;
+}
+.header_start,
+.header_middle,
+.header_end {
+  display: flex;
+  align-items: center;
+}
+.header_middle {
+  margin-left: 85px;
+}
+.header_logo {
+  margin-right: 31px;
+}
+.header_lang button {
+  border: none;
+  background: none;
+  padding: 0;
+}
+.header_lang > *:nth-child(1) {
+  margin-right: 10px;
+}
+._lang {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: rgba(255, 255, 255, 0.35);
+  text-decoration: none;
+}
+.active_lang {
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+}
+.header-list {
+  display: flex;
+}
+.header-link {
+  text-transform: uppercase;
+}
+.navbar {
+  overflow: hidden;
+}
+.navbar a {
+  float: left;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+}
+.header-item {
+  margin-right: 50px;
+}
+.header-item:last-child {
+  margin-right: 0;
+}
+.header-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+  padding: 26px 0;
+  display: flex;
+  align-items: center;
+}
+.header-link .icon {
+  margin-left: 6px;
+  width: 8px;
+  height: 5px;
+}
+.active_link {
+  font-weight: 600;
+  color: #ffe001;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 224, 1, 0) 61.8%,
+    rgba(255, 224, 1, 0.1) 106.9%
+  );
+  border-bottom: 2px solid #ffe001;
+}
+.cart {
+  margin-right: 30px;
+  text-decoration: none;
+}
+.cart button {
+  background: none;
+  border: none;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffe001;
+  display: flex;
+  align-items: center;
+}
+.cart .icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+.purchase button {
+  background: #ffe001;
+  border-radius: 4px;
+  padding: 13px 25px;
+  border: none;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #212121;
+}

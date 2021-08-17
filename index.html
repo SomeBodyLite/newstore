@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NewStore</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/grid.css" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <div class="header_content">
+            <div class="header_start">
+              <div class="header_logo">
+                <a href="#">
+                  <img src="./assets/images/logo.svg" alt="Logo" />
+                </a>
+              </div>
+              <div class="header_lang d-flex align-items-center">
+                <a href="#" class="_lang active_lang">ENG</a>
+                <a href="#" class="_lang">RU</a>
+              </div>
+            </div>
+            <div class="header_middle">
+              <nav class="navbar">
+                <ul class="header-list flex-wrap">
+                  <li class="header-item">
+                    <a href="#" class="header-link active_link">HOME</a>
+                  </li>
+                  <li class="header-item d-flex">
+                    <a href="#" class="header-link">ANNOUNCEMENT</a>
+                  </li>
+                  <li class="header-item d-flex">
+                    <a href="#" class="header-link">
+                      PRODUCTS
+                      <svg class="icon">
+                        <use
+                          xlink:href="./assets/images/icons.svg#dropdown"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="header-item d-flex">
+                    <a href="#" class="header-link">CONTACTS</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="header_end">
+              <a class="cart" href="#">
+                <button>
+                  <svg class="icon">
+                    <use xlink:href="./assets/images/icons.svg#cart"></use>
+                  </svg>
+                  CART
+                </button>
+              </a>
+              <a class="purchase" href="#"><button>PURCHASE CHEAT</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="main">
+      <div class="container">
+        <div class="row"></div>
+      </div>
+    </section>
+  </body>
+</html>
