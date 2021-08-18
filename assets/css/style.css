@@ -41,6 +41,10 @@ a {
   background: rgba(22, 30, 57, 0.5);
   backdrop-filter: blur(108px);
 }
+.header_logo a {
+  display: inline-block;
+  padding: 5px;
+}
 .header_content {
   display: flex;
   justify-content: space-between;
@@ -55,7 +59,7 @@ a {
   margin-left: 85px;
 }
 .header_logo {
-  margin-right: 31px;
+  margin-right: 21px;
 }
 .header_lang button {
   border: none;
