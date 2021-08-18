@@ -1,6 +1,6 @@
 <svg width="0" height="0" class="hidden">
   <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17" id="cart">
-    <path d="M4.103 4.103L3.328 1H1m3.103 3.103H16l-1.694 7.199a2.069 2.069 0 01-2.014 1.595H8.024c-.94 0-1.76-.633-2-1.54l-1.92-7.254z" stroke="#FFE001" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M4.103 4.103L3.328 1H1m3.103 3.103H16l-1.694 7.199a2.069 2.069 0 01-2.014 1.595H8.024c-.94 0-1.76-.633-2-1.54l-1.92-7.254z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
     <path d="M6.431 16.776a1.035 1.035 0 100-2.07 1.035 1.035 0 000 2.07zm7.241 0a1.034 1.034 0 100-2.07 1.034 1.034 0 000 2.07z" fill="#FFE001"></path>
   </symbol>
   <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 5" id="dropdown">
