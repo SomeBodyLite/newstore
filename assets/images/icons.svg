@@ -9,4 +9,7 @@
   <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 12" id="more">
     <path d="M7.448 5.352L3.4 1.417 4.343.5 10 6l-5.657 5.5-.943-.916 4.047-3.935H0V5.352h7.448z" fill="#FFE001"></path>
   </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10" id="date">
+    <path d="M2.793 1v1.93M7.207 1v1.93M2.655 4.31h4.69M1 3.206c0-.609.494-1.103 1.103-1.103h5.794C8.506 2.103 9 2.597 9 3.206v4.69c0 .609-.494 1.103-1.103 1.103H2.103A1.103 1.103 0 011 7.895V3.206z" stroke="#4D5365" stroke-width=".933" stroke-linecap="round" stroke-linejoin="round"></path>
+  </symbol>
 </svg>
