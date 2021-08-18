@@ -6,4 +6,7 @@
   <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 5" id="dropdown">
     <path d="M6.822.205a.631.631 0 01.928 0l.057.061a.725.725 0 01-.001.985L4.465 4.795a.63.63 0 01-.931 0L.193 1.25A.728.728 0 01.19.266L.25.205a.628.628 0 01.928 0L4 3.197 6.822.205z" fill="#fff"></path>
   </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 12" id="more">
+    <path d="M7.448 5.352L3.4 1.417 4.343.5 10 6l-5.657 5.5-.943-.916 4.047-3.935H0V5.352h7.448z" fill="#FFE001"></path>
+  </symbol>
 </svg>
