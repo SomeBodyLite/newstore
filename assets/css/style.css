@@ -11,7 +11,7 @@ body {
 img {
   pointer-events: none;
 }
-* {
+html {
   scroll-behavior: smooth;
 }
 ::selection {
