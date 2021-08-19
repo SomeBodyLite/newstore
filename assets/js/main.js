@@ -2,7 +2,7 @@ jQuery(function ($) {
 
   const section = $('.section'),
     nav = $('.menu'),
-    navHeight = nav.outerHeight(); // получаем высоту навигации 
+    navHeight = nav.outerHeight(); // получение высоту навигации 
 
   // поворот экрана 
   window.addEventListener('orientationchange', function () {
@@ -20,7 +20,7 @@ jQuery(function ($) {
         nav.find('a').removeClass('active_link');
         section.removeClass('active_link');
 
-        $(this).addClass('active');
+        $(this).addClass('active'); // Задание стиля для активного блока
         nav.find('a[href="#' + $(this).attr('id') + '"]').addClass('active_link');
       }
     });

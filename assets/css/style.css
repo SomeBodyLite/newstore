@@ -11,9 +11,9 @@ body {
 img {
   pointer-events: none;
 }
-html {
+/* html {
   scroll-behavior: smooth;
-}
+} */
 ::selection {
   color: #0a122e;
   background: #ffe001;
@@ -130,8 +130,9 @@ a:focus {
   border-bottom: 2px solid #ffe001;
 }
 .cart {
-  margin-right: 30px;
+  margin-right: 20px;
   text-decoration: none;
+  padding: 5px;
 }
 .cart button {
   background: none;
@@ -548,7 +549,8 @@ a:focus {
   border-top: 1px solid #0f152b;
 }
 .bottom_footer_content {
-  padding: 14px 0;
+  padding-top: 14px;
+  padding-bottom: 14px;
   display: flex;
   justify-content: space-between;
   align-items: center;
