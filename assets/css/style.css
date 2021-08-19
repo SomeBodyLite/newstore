@@ -532,7 +532,7 @@ a:focus {
   transition: text-decoration 0.1s ease-in-out;
 }
 .contacts {
-  padding-bottom: 75px;
+  padding-bottom: 175px;
 }
 .footer .header_middle {
   margin-left: 140px;
@@ -540,6 +540,7 @@ a:focus {
 .footer {
   background: rgba(22, 30, 57, 0.5);
   backdrop-filter: blur(108px);
+  margin-top: -100px;
 }
 .footer hr {
   margin: 0;
