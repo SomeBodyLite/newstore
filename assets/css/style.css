@@ -142,10 +142,11 @@ a:focus {
   );
   border-bottom: 2px solid #ffe001;
 }
-.header_end :first-child {
+.mobile-menu__list .header_end .purchase {
   margin-right: 20px;
 }
 .cart {
+  margin-right: 20px;
   text-decoration: none;
   padding: 5px;
 }
@@ -683,7 +684,7 @@ a:focus {
     right: 0;
     z-index: 999;
     height: 0;
-    opacity: 1;
+    /* opacity: 1; */
     transition: 0.5s;
     transition-delay: 0.2s;
     overflow: hidden;

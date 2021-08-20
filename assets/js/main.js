@@ -2,7 +2,7 @@ jQuery(function ($) {
 
   const section = $('.section'),
     nav = $('.menu'),
-    navHeight = nav.outerHeight(); // получение высоту навигации 
+    navHeight = nav.outerHeight() + 25; // получение высоту навигации 
 
   // поворот экрана 
   window.addEventListener('orientationchange', function () {
