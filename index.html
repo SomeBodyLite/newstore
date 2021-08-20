@@ -59,7 +59,7 @@
                   <img src="./assets/images/logo.svg" alt="Logo" />
                 </a>
               </div>
-              <div class="header_lang d-flex align-items-center">
+              <div class="header_lang">
                 <a href="#" class="_lang active_lang">ENG</a>
                 <a href="#" class="_lang">RU</a>
               </div>
@@ -87,6 +87,63 @@
                     <a href="#contacts" class="header-link">CONTACTS</a>
                   </li>
                 </ul>
+              </nav>
+              <nav class="mobile-menu">
+                <div class="container">
+                  <div class="row">
+                    <input
+                      type="checkbox"
+                      id="checkbox"
+                      class="mobile-menu__checkbox"
+                    />
+                    <label for="checkbox" class="mobile-menu__btn"
+                      ><div class="mobile-menu__icon"></div>
+                    </label>
+                    <div class="mobile-menu__container">
+                      <div class="container">
+                        <div class="row">
+                          <ul class="mobile-menu__list">
+                            <li class="mobile-menu__item">
+                              <a href="#main" class="mobile-menu__link">HOME</a>
+                            </li>
+                            <li class="mobile-menu__item">
+                              <a href="#ann" class="mobile-menu__link"
+                                >ANNOUNCEMENT</a
+                              >
+                            </li>
+                            <li class="mobile-menu__item">
+                              <a href="#products" class="mobile-menu__link"
+                                >PRODUCTS</a
+                              >
+                            </li>
+                            <li class="mobile-menu__item">
+                              <a href="#contacts" class="mobile-menu__link"
+                                >CONTACTS</a
+                              >
+                            </li>
+                            <li>
+                              <div class="header_end">
+                                <a class="cart" href="#">
+                                  <button>
+                                    <svg class="icon">
+                                      <use
+                                        xlink:href="./assets/images/icons.svg#cart"
+                                      ></use>
+                                    </svg>
+                                    CART
+                                  </button>
+                                </a>
+                                <a class="purchase" href="#"
+                                  ><button>PURCHASE CHEAT</button></a
+                                >
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </nav>
             </div>
             <div class="header_end">
@@ -599,7 +656,7 @@
         <div class="row">
           <div class="bottom_footer_content">
             <a class="terms" href="#">Terms & Conditions</a>
-            <div class="header_lang d-flex align-items-center">
+            <div class="header_lang">
               <a href="#" class="_lang active_lang">ENG</a>
               <a href="#" class="_lang">RU</a>
             </div>
