@@ -721,9 +721,9 @@ a:focus {
     padding: 14px 0;
   }
 
-  .header_start .header_lang {
+  /* .header_start .header_lang {
     display: none;
-  }
+  } */
 
   .header_content>.header_end {
     display: none;
