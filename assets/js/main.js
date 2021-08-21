@@ -11,6 +11,7 @@ jQuery(function ($) {
 
   $(window).on('scroll', function () {
     const position = $(this).scrollTop();
+    const hitem = $('.header-item');
 
     section.each(function () {
       const top = $(this).offset().top - navHeight - 5,
@@ -19,9 +20,11 @@ jQuery(function ($) {
       if (position >= top && position <= bottom) {
         nav.find('a').removeClass('active_link');
         section.removeClass('active_link');
+        hitem.removeClass('header-item-active');
 
         $(this).addClass('active'); // Задание стиля для активного блока
         nav.find('a[href="#' + $(this).attr('id') + '"]').addClass('active_link');
+        nav.find('[attr="' + $(this).attr('id') + '"]').addClass('header-item-active');
       }
     });
   });
