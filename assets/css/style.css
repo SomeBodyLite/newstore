@@ -19,8 +19,8 @@ html {
   font-size: 16px;
 }
 
-html,
-body {
+body,
+html {
   height: 100%;
 }
 
@@ -102,6 +102,7 @@ body {
   backdrop-filter: blur(108px);
   border-radius: 4px;
   margin-left: 35px;
+  height: max-content;
 }
 
 .cart-aside-content {
@@ -1077,6 +1078,10 @@ a:focus {
 
   background: rgb(16, 24, 49);
   margin-top: -100px;
+}
+
+.footer-cart {
+  margin-top: 0;
 }
 
 .footer .header_logo {
