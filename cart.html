@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HewStore - Cart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="./assets/fav/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/fav/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/fav/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/fav/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="./assets/fav/safari-pinned-tab.svg"
+      color="#0a122e"
+    />
+    <link rel="shortcut icon" href="./assets/fav/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#0a122e" />
+    <meta
+      name="msapplication-config"
+      content="./assets/fav/browserconfig.xml"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" href="./assets/css/grid.css" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body class="wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <div class="header_content">
+            <div class="header_start">
+              <div class="header_logo">
+                <a href="./index.html">
+                  <img src="./assets/images/logo.svg" alt="Logo" />
+                </a>
+              </div>
+              <div class="header_lang">
+                <a href="#" class="_lang active_lang">ENG</a>
+                <a href="#" class="_lang">RU</a>
+              </div>
+            </div>
+            <div class="header_middle">
+              <nav class="menu navbar">
+                <ul class="header-list flex-wrap">
+                  <li class="header-item" attr="main">
+                    <a href="./index.html#main" class="header-link">HOME</a>
+                  </li>
+                  <li class="header-item d-flex" attr="ann">
+                    <a href="./index.html#ann" class="header-link"
+                      >ANNOUNCEMENT</a
+                    >
+                  </li>
+                  <li class="header-item d-flex" attr="products">
+                    <a href="./index.html#products" class="header-link">
+                      PRODUCTS
+                      <!-- <svg class="icon">
+                        <use
+                          xlink:href="./assets/images/icons.svg#dropdown"
+                        ></use>
+                      </svg> -->
+                    </a>
+                  </li>
+                  <li class="header-item d-flex" attr="contacts">
+                    <a href="./index.html#contacts" class="header-link"
+                      >CONTACTS</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+              <nav class="mobile-menu">
+                <div class="container">
+                  <div class="row">
+                    <input
+                      type="checkbox"
+                      id="checkbox"
+                      class="mobile-menu__checkbox"
+                    />
+                    <label for="checkbox" class="mobile-menu__btn"
+                      ><div class="mobile-menu__icon"></div>
+                    </label>
+                    <div class="mobile-menu__container">
+                      <div class="container">
+                        <div class="row">
+                          <ul class="mobile-menu__list">
+                            <li class="mobile-menu__item">
+                              <a
+                                href="./index.html#main"
+                                class="mobile-menu__link"
+                                >HOME</a
+                              >
+                            </li>
+                            <li class="mobile-menu__item">
+                              <a
+                                href="./index.html#ann"
+                                class="mobile-menu__link"
+                                >ANNOUNCEMENT</a
+                              >
+                            </li>
+                            <li class="mobile-menu__item">
+                              <a
+                                href="./index.html#products"
+                                class="mobile-menu__link"
+                                >PRODUCTS</a
+                              >
+                            </li>
+                            <li class="mobile-menu__item">
+                              <a
+                                href="./index.html#contacts"
+                                class="mobile-menu__link"
+                                >CONTACTS</a
+                              >
+                            </li>
+                            <li>
+                              <div class="header_end">
+                                <a class="cart" href="#">
+                                  <button>
+                                    <svg class="icon">
+                                      <use
+                                        xlink:href="./assets/images/icons.svg#cart"
+                                      ></use>
+                                    </svg>
+                                    CART
+                                  </button>
+                                </a>
+                                <a class="purchase" href="#"
+                                  ><button>PURCHASE CHEAT</button></a
+                                >
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+            </div>
+            <div class="header_end">
+              <a class="cart" href="#">
+                <button>
+                  <svg class="icon">
+                    <use xlink:href="./assets/images/icons.svg#cart"></use>
+                  </svg>
+                  CART
+                </button>
+              </a>
+              <a class="purchase" href="#"><button>PURCHASE CHEAT</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="cart-main">
+      <div class="container">
+        <div class="row">
+          <div class="cart-content">
+            <div class="cart-head">
+              <h3>CART</h3>
+              <h4>999 items</h4>
+            </div>
+            <div class="cart-content-aside">
+              <div class="cart-body">
+                <div class="cart-interactive">
+                  <label class="b-contain">
+                    <span>Choose all</span>
+                    <input type="checkbox" checked />
+                    <div class="b-input"></div>
+                  </label>
+                  <button class="cart-clear">
+                    <svg class="icon">
+                      <use xlink:href="./assets/images/icons.svg#basket"></use>
+                    </svg>
+                    <p>Clear all</p>
+                  </button>
+                </div>
+                <div class="cart-i">
+                  <img
+                    class="cart-item__img_bg"
+                    src="./assets/images/sub_product_3.png"
+                    alt="product logo"
+                  />
+                  <div class="cart-item">
+                    <div class="cart-item_start">
+                      <img
+                        class="cart-item__img"
+                        src="./assets/images/sub_product_3.png"
+                        alt="product logo"
+                      />
+
+                      <div class="cart-item-text">
+                        <h3 class="c-item-text-info">
+                          Edenity: Day Subscription
+                        </h3>
+                        <h4 class="c-item-text-comment">Overwatch Software</h4>
+                      </div>
+                    </div>
+                    <div class="cart-item-count">
+                      <button class="cart-count-button" data-direction="minus">
+                        -
+                      </button>
+                      <input class="ccb-input" type="text" value="1" />
+                      <button class="cart-count-button" data-direction="plus">
+                        +
+                      </button>
+                    </div>
+                    <div class="cart-item-price">
+                      <span class="cart-price">$ 9.00</span>
+                      <button class="cart-price-del">
+                        <svg class="icon">
+                          <use
+                            xlink:href="./assets/images/icons.svg#basket"
+                          ></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="cart-i">
+                  <img
+                    class="cart-item__img_bg"
+                    src="./assets/images/sub_product_1.png"
+                    alt="product logo"
+                  />
+                  <div class="cart-item">
+                    <div class="cart-item_start">
+                      <img
+                        class="cart-item__img"
+                        src="./assets/images/sub_product_1.png"
+                        alt="product logo"
+                      />
+                      <div class="cart-item-text">
+                        <h3 class="c-item-text-info">
+                          BCWare: Week Subscription
+                        </h3>
+                        <h4 class="c-item-text-comment">Apex Software</h4>
+                      </div>
+                    </div>
+                    <div class="cart-item-count">
+                      <button class="cart-count-button" data-direction="minus">
+                        -
+                      </button>
+                      <input class="ccb-input" type="text" value="1" />
+                      <button class="cart-count-button" data-direction="plus">
+                        +
+                      </button>
+                    </div>
+                    <div class="cart-item-price">
+                      <span class="cart-price">$ 12.50</span>
+                      <button class="cart-price-del">
+                        <svg class="icon">
+                          <use
+                            xlink:href="./assets/images/icons.svg#basket"
+                          ></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cart-aside">
+                <div class="cart-aside-content">
+                  <div class="purchase-head">
+                    <h2>Purchase</h2>
+                  </div>
+                  <ul class="purchase-list">
+                    <li class="p-list-item">
+                      <p class="p-list-item__name">Edenity: Day Subscription</p>
+                      <span class="p-list-item__price">$ 9.00</span>
+                    </li>
+                    <li class="p-list-item">
+                      <p class="p-list-item__name">BCWare: Week Subscription</p>
+                      <span class="p-list-item__price">$ 12.50</span>
+                    </li>
+                  </ul>
+                  <div class="purchase-list__total">
+                    <p class="p-list-total__name">Total</p>
+                    <span class="p-list-total__price">$ 21.50</span>
+                  </div>
+                  <div class="purchase-buttons">
+                    <div class="p-coupone">
+                      <input
+                        type="text"
+                        class="p-coupone_input"
+                        placeholder="Enter your coupone"
+                      />
+                      <button class="p-coupone_submit">
+                        <span>
+                          <svg
+                            width="13"
+                            height="12"
+                            viewBox="0 0 19 18"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M17.633 8.36187C18.1223 8.83916 18.1223 9.61299 17.633 10.0903L9.65864 17.8681C9.1693 18.3454 8.37591 18.3454 7.88657 17.8681C7.39722 17.3908 7.39722 16.617 7.88657 16.1397L13.7218 10.4482L1.25305 10.4482C0.56101 10.4482 0 9.90106 0 9.22607C7.46876e-08 8.55109 0.56101 8.00391 1.25305 8.00391L13.7218 8.00391L7.88657 2.31245C7.39722 1.83516 7.39722 1.06133 7.88657 0.584039C8.37592 0.106753 9.1693 0.106753 9.65865 0.584039L17.633 8.36187Z"
+                              fill="white"
+                            ></path>
+                          </svg>
+                        </span>
+                      </button>
+                    </div>
+                    <div class="p-submit">
+                      <button class="p-submit__button">
+                        <p>PURCHASE</p>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="header_content">
+            <div class="header_start">
+              <div class="header_logo">
+                <a href="./index.html">
+                  <img src="./assets/images/logo.svg" alt="Logo" />
+                </a>
+              </div>
+            </div>
+            <div class="header_middle">
+              <nav class="navbar">
+                <ul class="header-list flex-wrap">
+                  <li class="header-item">
+                    <a href="./index.html" class="header-link">HOME</a>
+                  </li>
+                  <li class="header-item d-flex">
+                    <a href="./index.html#ann" class="header-link"
+                      >ANNOUNCEMENT</a
+                    >
+                  </li>
+                  <li class="header-item d-flex">
+                    <a href="./index.html#products" class="header-link">
+                      PRODUCTS
+                      <!-- <svg class="icon">
+                        <use
+                          xlink:href="./assets/images/icons.svg#dropdown"
+                        ></use>
+                      </svg> -->
+                    </a>
+                  </li>
+                  <li class="header-item d-flex">
+                    <a href="./index.html#contacts" class="header-link"
+                      >CONTACTS</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="header_end">
+              <a class="cart" href="#">
+                <button>
+                  <svg class="icon">
+                    <use xlink:href="./assets/images/icons.svg#cart"></use>
+                  </svg>
+                  CART
+                </button>
+              </a>
+              <a class="purchase" href="#"><button>PURCHASE CHEAT</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="container">
+        <div class="row">
+          <div class="bottom_footer_content">
+            <a class="terms" href="#">Terms & Conditions</a>
+            <div class="header_lang">
+              <a href="#" class="_lang active_lang">ENG</a>
+              <a href="#" class="_lang">RU</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script>
+    const btns2 = document.querySelectorAll(".cart-count-button");
+
+    btns2.forEach((btn2) => {
+      btn2.addEventListener("click", function () {
+        const direction = this.dataset.direction;
+        const inp = this.parentElement.querySelector(".ccb-input");
+        const currentValue = +inp.value;
+        let newValue;
+
+        if (direction === "plus") {
+          newValue = currentValue + 1;
+        } else {
+          newValue = currentValue - 1 > 0 ? currentValue - 1 : 0;
+        }
+
+        inp.value = newValue;
+      });
+    });
+  </script>
+</html>

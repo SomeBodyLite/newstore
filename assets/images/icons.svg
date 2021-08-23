@@ -12,4 +12,7 @@
   <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10" id="date">
     <path d="M2.793 1v1.93M7.207 1v1.93M2.655 4.31h4.69M1 3.206c0-.609.494-1.103 1.103-1.103h5.794C8.506 2.103 9 2.597 9 3.206v4.69c0 .609-.494 1.103-1.103 1.103H2.103A1.103 1.103 0 011 7.895V3.206z" stroke="#4D5365" stroke-width=".933" stroke-linecap="round" stroke-linejoin="round"></path>
   </symbol>
+  <symbol  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 13" id="basket">
+    <path d="M2.375 3.27586L3.0359 10.6142C3.10652 11.3983 3.78632 12 4.60142 12H8.3986C9.2137 12 9.8935 11.3983 9.96406 10.6142L10.625 3.27586M4.73214 3.08621V2.51724C4.73214 1.67929 5.43567 1 6.30357 1H6.69643C7.56433 1 8.26786 1.67929 8.26786 2.51724V3.08621M1 3.27586H12" stroke-linecap="round" stroke-linejoin="round"></path>
+  </symbol>
 </svg>
