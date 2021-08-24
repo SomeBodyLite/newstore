@@ -33,12 +33,14 @@ html {
   flex-direction: column;
 }
 
-.cart-main {
+.cart-main,
+.payment-main {
   margin-top: 130px;
   flex: 1 1 auto;
 }
 
-.cart-content {
+.cart-content,
+.payment-content {
   width: auto;
   margin: 0 auto;
   display: flex;
@@ -47,13 +49,15 @@ html {
   flex-direction: column;
 }
 
-.cart-head {
+.cart-head,
+.payment-head {
   display: flex;
   align-items: center;
   margin-bottom: 25px;
 }
 
-.cart-head h3 {
+.cart-head h3,
+.payment-head h3 {
   font-weight: 500;
   font-size: 18px;
   line-height: 22px;
@@ -91,11 +95,149 @@ html {
   display: flex;
 }
 
-.cart-content-aside {
+.payment-body {
+  display: flex;
+  flex-direction: column;
+  width: 310px;
+  margin-right: 25px;
+}
+
+.method-image {
+  max-width: 23px;
+  max-height: 23px;
+  margin-right: 6px;
+}
+
+.payment-method {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: left;
+  color: #ffffff;
+  padding: 19px 34px;
+  background: rgba(25, 34, 60, 0.5);
+  border: 1px solid #141B36;
+  backdrop-filter: blur(32px);
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.payment-method__active {
+  color: #FFE001;
+  background: rgba(25, 34, 60, 0.5);
+  border: 1px solid #FFE001;
+}
+
+.cart-content-aside,
+.payment-content-aside {
   display: flex;
   flex-direction: row;
 }
 
+.c-payment-head {
+  margin-bottom: 25px;
+}
+
+.c-payment-type {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFE001;
+}
+
+.payment-aside {
+  background: rgba(25, 34, 60, 0.5);
+  border: 1px solid #141B36;
+  backdrop-filter: blur(108px);
+  border-radius: 4px;
+}
+
+.payment-aside-content {
+  padding: 23px 41px;
+}
+
+/* card */
+
+/* .form-container .field-container:first-of-type {
+  grid-area: name;
+} */
+
+.form-container .field-container:first-of-type {
+  grid-area: number;
+}
+
+.form-container .field-container:nth-of-type(2) {
+  grid-area: expiration;
+}
+
+.form-container .field-container:nth-of-type(3) {
+  grid-area: security;
+}
+
+.field-container input {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.field-container {
+  position: relative;
+}
+
+.form-container {
+  display: grid;
+  grid-column-gap: 10px;
+  grid-template-columns: auto auto;
+  grid-template-rows: 90px 90px 90px;
+  grid-template-areas:
+    /*"name name"*/
+    "number number""expiration security";
+  max-width: 310px;
+  color: #707070;
+}
+
+.form-container label {
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  padding-bottom: 17px;
+  font-size: 13px;
+}
+
+.field-container input {
+  border: none;
+  background: #19223C;
+  border: 1px solid #141B36;
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-top: 12px;
+  padding: 15px;
+  font-size: 16px;
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid #dcdcdc;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.ccicon {
+  height: 38px;
+  position: absolute;
+  right: 6px;
+  top: calc(58% - 17px);
+  width: 60px;
+}
+
+/* CREDIT CARD IMAGE STYLING */
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+}
+
+
+/* /card */
 .cart-aside {
   background: rgba(25, 34, 60, 0.5);
   border: 1px solid #141B36;

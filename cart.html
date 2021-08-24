@@ -420,7 +420,115 @@
       </div>
     </main>
     <main class="payment-main">
-      <div class="container"><div class="row"></div></div>
+      <div class="container">
+        <div class="row">
+          <div class="payment-content">
+            <div class="payment-head">
+              <h3>Payment</h3>
+            </div>
+            <div class="payment-content-aside">
+              <div class="payment-body">
+                <button class="payment-method payment-method__active">
+                  <img
+                    class="method-image"
+                    src="./assets/images/PayPal.svg"
+                    alt="PayPal"
+                  />
+                  <p class="payment-method-name">PayPal</p>
+                </button>
+                <button class="payment-method">
+                  <img
+                    class="method-image"
+                    src="./assets/images/qiwi.svg"
+                    alt="Qiwi"
+                  />
+                  <p class="payment-method-name">Qiwi</p>
+                </button>
+                <button class="payment-method">
+                  <img
+                    class="method-image"
+                    src="./assets/images/yoomoney.svg"
+                    alt="YooMoney"
+                  />
+                  <p class="payment-method-name">YooMoney</p>
+                </button>
+                <button class="payment-method">
+                  <img
+                    class="method-image"
+                    src="./assets/images/BTC.svg"
+                    alt="Bitcoin"
+                  />
+                  <p class="payment-method-name">Bitcoin</p>
+                </button>
+                <button class="payment-method">
+                  <img
+                    class="method-image"
+                    src="./assets/images/paydash.svg"
+                    alt="PayDash"
+                  />
+                  <p class="payment-method-name">PayDash</p>
+                </button>
+              </div>
+              <div class="payment-aside">
+                <div class="payment-aside-content">
+                  <div class="c-payment-head">
+                    <h2 class="c-payment-type">Payment via PayPal</h2>
+                  </div>
+                  <div class="c-payment-card">
+                    <div class="form-container">
+                      <!-- <div class="field-container">
+                        <label for="name">Name</label>
+                        <input id="name" maxlength="20" type="text" />
+                      </div> -->
+                      <div class="field-container">
+                        <label for="cardnumber">Card Number</label>
+                        <input
+                          id="cardnumber"
+                          type="text"
+                          pattern="[0-9]*"
+                          inputmode="numeric"
+                          placeholder="0123 4567 8901 2345"
+                        />
+                        <svg
+                          id="ccicon"
+                          class="ccicon"
+                          width="750"
+                          height="471"
+                          viewBox="0 0 750 471"
+                          version="1.1"
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                        ></svg>
+                      </div>
+                      <div class="field-container">
+                        <label for="expirationdate">Expiration (mm/yy)</label>
+                        <input
+                          id="expirationdate"
+                          type="text"
+                          pattern="[0-9]*"
+                          inputmode="numeric"
+                          placeholder="MM/YY"
+                        />
+                      </div>
+                      <div class="field-container">
+                        <label for="securitycode">CVV</label>
+                        <input
+                          id="securitycode"
+                          type="text"
+                          pattern="[0-9]*"
+                          inputmode="numeric"
+                          placeholder="012"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="c-payment-button"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
     <footer class="footer footer-cart">
       <div class="container">
@@ -510,4 +618,6 @@
       });
     });
   </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/imask/3.4.0/imask.min.js"></script>
+  <script src="./assets/js/card-script.js" defer></script>
 </html>
