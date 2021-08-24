@@ -156,12 +156,13 @@ html {
   line-height: 12px;
   color: #8A8E9B;
   font-family: inherit;
+  padding: 14px 16px;
 }
 
 .p-coupone_submit {
   border: none;
   background: none;
-  padding: 0;
+  padding: 6px 16px;
 }
 
 .p-coupone {
@@ -171,7 +172,6 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 14px 16px;
   margin-bottom: 12px;
 }
 
