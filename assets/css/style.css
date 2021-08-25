@@ -13,6 +13,7 @@ body {
 
 img {
   pointer-events: none;
+  user-select: none;
 }
 
 html {
@@ -37,6 +38,7 @@ html {
 .payment-main {
   margin-top: 130px;
   flex: 1 1 auto;
+  margin-bottom: 50px;
 }
 
 .cart-content,
@@ -152,6 +154,7 @@ html {
   border: 1px solid #141B36;
   backdrop-filter: blur(108px);
   border-radius: 4px;
+  height: max-content;
 }
 
 .payment-aside-content {
@@ -189,7 +192,7 @@ html {
   display: grid;
   grid-column-gap: 10px;
   grid-template-columns: auto auto;
-  grid-template-rows: 90px 90px 90px;
+  grid-template-rows: 90px 90px;
   grid-template-areas:
     /*"name name"*/
     "number number""expiration security";
@@ -318,6 +321,10 @@ html {
 }
 
 .p-submit__button {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #212121;
   width: 100%;
   padding: 13px 0;
   border: none;
@@ -325,11 +332,13 @@ html {
   border-radius: 2px
 }
 
-.p-submit__button {
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 19px;
-  color: #212121;
+.p-submit__button:hover {
+  background: #ffe634;
+
+}
+
+.p-submit__button:active {
+  background: #e5ca01;
 }
 
 .p-coupone_submit svg {
@@ -398,6 +407,22 @@ html {
   line-height: 17px;
   color: rgba(255, 255, 255, 0.75);
 
+}
+
+.c-payment-submit {
+  display: flex;
+  flex-direction: column;
+  max-width: 310px;
+  margin-top: 10px;
+}
+
+.payment-agreement {
+  margin-top: 10px;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.25);
+  word-break: break-all;
 }
 
 .ccb-input {
@@ -722,6 +747,15 @@ a:focus {
   padding: 26px 0;
   display: flex;
   align-items: center;
+  transition: color .1s ease-in-out;
+}
+
+.header-link:hover {
+  color: #FFE001;
+}
+
+.header-link:active {
+  color: #E6CA01;
 }
 
 .header-link .icon {
@@ -755,6 +789,15 @@ a:focus {
   color: #ffe001;
   display: flex;
   align-items: center;
+  transition: color .1s ease-in-out;
+}
+
+.cart:hover button {
+  color: #FAFF01;
+}
+
+.cart:active button {
+  color: #CAB100;
 }
 
 .cart .icon {
@@ -762,7 +805,17 @@ a:focus {
   height: 16px;
   margin-right: 8px;
   stroke: #ffe001;
+  transition: stroke .1s ease-in-out;
 }
+
+.cart:hover .icon {
+  stroke: #FAFF01;
+}
+
+.cart:active .icon {
+  stroke: #CAB100;
+}
+
 
 .purchase button {
   background: #ffe001;
@@ -773,6 +826,15 @@ a:focus {
   font-size: 1rem;
   line-height: 19px;
   color: #212121;
+  transition: background .1s ease-in-out;
+}
+
+.purchase:hover button {
+  background: #ffe634;
+}
+
+.purchase:active button {
+  background: #e5ca01;
 }
 
 .more {
@@ -791,6 +853,18 @@ a:focus {
   line-height: 19px;
   text-transform: uppercase;
   color: #ffe001;
+  text-decoration: underline rgba(0, 0, 0, 0);
+  transition: text-decoration .1s ease-in-out;
+}
+
+.more:hover button {
+  text-decoration: underline #FFE31A;
+  color: #FFE31A;
+}
+
+.more:active button {
+  color: #E6CA01;
+  text-decoration: underline #E6CA01;
 }
 
 .more .icon {
@@ -1172,10 +1246,20 @@ a:focus {
   border-radius: 4px;
   text-decoration: none;
   color: #fff;
+  transition: background .1s ease-in-out;
 }
 
 .new_contact:hover h4 {
-  text-decoration: underline rgba(255, 255, 255, 0.75);
+  color: #FFE001;
+  text-decoration: underline #FFE001;
+}
+
+.new_contact:hover {
+  background: #19203c;
+}
+
+.new_contact:active {
+  background: #0b122c;
 }
 
 .new_contact:hover h3 {
@@ -1207,7 +1291,7 @@ a:focus {
   line-height: 17px;
   color: rgba(255, 255, 255, 0.75);
   text-decoration: underline rgba(0, 0, 0, 0);
-  transition: text-decoration 0.1s ease-in-out;
+  transition: .1s ease-in-out;
 }
 
 .contacts {
