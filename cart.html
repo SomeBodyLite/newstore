@@ -172,7 +172,7 @@
         </div>
       </div>
     </header>
-    <main class="cart-main">
+    <main class="cart-main zakaz-form switch-form start-anim">
       <div class="container">
         <div class="row">
           <div class="cart-content">
@@ -419,7 +419,7 @@
         </div>
       </div>
     </main>
-    <main class="payment-main">
+    <main class="payment-main cons-form switch-form">
       <div class="container">
         <div class="row">
           <div class="payment-content">
@@ -523,7 +523,7 @@
                     </div>
                   </div>
                   <div class="c-payment-submit">
-                    <button class="p-submit__button"><p>PURCHASE</p></button>
+                    <button class="p-submit__button2"><p>PURCHASE</p></button>
                     <span class="payment-agreement">
                       By clicking on the button, you agree that each item is
                       virtual and non-returnable
@@ -536,7 +536,7 @@
         </div>
       </div>
     </main>
-    <footer class="footer footer-cart">
+    <!-- <footer class="footer footer-cart">
       <div class="container">
         <div class="row">
           <div class="header_content">
@@ -561,11 +561,6 @@
                   <li class="header-item d-flex">
                     <a href="./index.html#products" class="header-link">
                       PRODUCTS
-                      <!-- <svg class="icon">
-                        <use
-                          xlink:href="./assets/images/icons.svg#dropdown"
-                        ></use>
-                      </svg> -->
                     </a>
                   </li>
                   <li class="header-item d-flex">
@@ -602,7 +597,7 @@
           </div>
         </div>
       </div>
-    </footer>
+    </footer> -->
   </body>
   <script>
     const btns2 = document.querySelectorAll(".cart-count-button");
@@ -621,6 +616,19 @@
         }
 
         inp.value = newValue;
+      });
+    });
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script>
+    jQuery(document).ready(function ($) {
+      $(function () {
+        $(".p-submit__button").click(function () {
+          $(".p-submit__button").toggleClass("p-submit__unactive");
+          setTimeout(function () {
+            $(".switch-form").toggleClass("start-anim");
+          }, 1200);
+        });
       });
     });
   </script>
